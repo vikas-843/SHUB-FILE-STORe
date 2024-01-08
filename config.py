@@ -87,7 +87,7 @@ class Var(object):
     APP_NAME = None
     if 'DYNO' in environ:
         ON_HEROKU = True
-        APP_NAME = str(getenv('APP_NAME'))
+        APP_NAME = str(getenv('pathan-public-store'))
     
     else:
         ON_HEROKU = False
