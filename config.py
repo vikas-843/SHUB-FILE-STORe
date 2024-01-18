@@ -32,13 +32,13 @@ def is_enabled(value, default):
 # Owner Information
 API_ID = int(environ.get("API_ID", "26058820"))
 API_HASH = environ.get("API_HASH", "cf34db4ed69493d377a2516056711cb6")
-ADMINS = int(environ.get("ADMINS", "5683891175 2135144380"))
+ADMINS = int(environ.get("ADMINS", "2135144380"))
 
 # Database Information
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://Order:order@cluster0.aitjsft.mongodb.net/?retryWrites=true&w=majority")
-CDB_NAME = environ.get("CDB_NAME", "clonepathanbotz")
+CDB_NAME = environ.get("CDB_NAME", "clonepbotz")
 DB_URI = environ.get("DB_URI", "mongodb+srv://Order:order@cluster0.aitjsft.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = environ.get("DB_NAME", "Pathanpublicbotz")
+DB_NAME = environ.get("DB_NAME", "Pathananimebotz")
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -87,7 +87,7 @@ class Var(object):
     APP_NAME = None
     if 'DYNO' in environ:
         ON_HEROKU = True
-        APP_NAME = str(getenv('pathan-public-store'))
+        APP_NAME = str(getenv('anime-file'))
     
     else:
         ON_HEROKU = False
