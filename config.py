@@ -45,9 +45,9 @@ DB_NAME = environ.get("DB_NAME", "Pathananimebotz")
 # Ask Doubt on telegram @KingVJ01
 
 # Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", "6473247597:AAHtGqrI9bFbAFETcAPMNF45D2iWYKjrSEM")
-BOT_USERNAME = environ.get("BOT_USERNAME", "Spike_Spiegel_files_bot") # your bot username without @
-PICS = (environ.get('PICS', 'https://graph.org/file/82ef767ffebe3a948e476.jpg https://graph.org/file/82ef767ffebe3a948e476.jpg')).split() # Bot Start Picture
+BOT_TOKEN = environ.get("BOT_TOKEN", "6500218577:AAGxXXjqiWDpAus68bJ8K0U0uOuV9nBusWE")
+BOT_USERNAME = environ.get("BOT_USERNAME", "Subh_files_bot") # your bot username without @
+PICS = (environ.get('PICS', 'https://telegra.ph/file/8f108d16fe9a4b8bac79f.jpg https://telegra.ph/file/8f108d16fe9a4b8bac79f.jpg')).split() # Bot Start Picture
 
 # Auto Delete Information
 AUTO_DELETE = int(environ.get("AUTO_DELETE", "7200")) # Time in Minutes
@@ -66,7 +66,7 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 
 # Enable - True or Disable - False
-PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
+PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "True")), True)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
 
 # Don't Remove Credit Tg - @VJ_Botz
@@ -94,9 +94,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     if HAS_SSL:
-        URL = "https://anime-file-61b762391074.herokuapp.com/"
+        URL = "https://subh-files-a5c5839f3d78.herokuapp.com/"
     else:
-        URL = "https://anime-file-61b762391074.herokuapp.com/"
+        URL = "https://subh-files-a5c5839f3d78.herokuapp.com/"
 
 
 
